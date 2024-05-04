@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6a310afc.css",
+    "main.js": "/static/js/main.9ee82366.js",
+    "static/js/453.3fb21406.chunk.js": "/static/js/453.3fb21406.chunk.js",
+    "static/media/pic1.jpg": "/static/media/pic1.14d6f6af086539ed9936.jpg",
+    "static/media/pic2.jpg": "/static/media/pic2.d3b5548d53a2d7aaffc6.jpg",
+    "static/media/pic3.jpg": "/static/media/pic3.8851d83d679394bbdd99.jpg",
+    "static/media/aboutus.gif": "/static/media/aboutus.15f2b28fca0ad577d2d0.gif",
+    "static/media/logo512.png": "/static/media/logo512.0bb775f2f7408d719365.png",
+    "static/media/whyUsMaintenance_769198.png": "/static/media/whyUsMaintenance_769198.2461055d88a53234cff0.png",
+    "static/media/whyUsDecision-making_2620308.png": "/static/media/whyUsDecision-making_2620308.ec2fe03cb6bb109c1a50.png",
+    "static/media/whyUsThumbs-up_6043309.png": "/static/media/whyUsThumbs-up_6043309.c0ca0834eda35ee08a45.png",
+    "static/media/logo192.png": "/static/media/logo192.f3eb5f5a7d33b9dfaa9f.png",
+    "static/media/whyUsTracking_13386211.png": "/static/media/whyUsTracking_13386211.73fda3c812375a4d2c7d.png",
+    "static/media/whyUsSolar-panels_4114997.png": "/static/media/whyUsSolar-panels_4114997.168ffe69e12973973d09.png",
+    "static/media/whyUsWarranty_950264.png": "/static/media/whyUsWarranty_950264.72cbacb531454a31f7c6.png",
+    "index.html": "/index.html",
+    "main.6a310afc.css.map": "/static/css/main.6a310afc.css.map",
+    "main.9ee82366.js.map": "/static/js/main.9ee82366.js.map",
+    "453.3fb21406.chunk.js.map": "/static/js/453.3fb21406.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a310afc.css",
+    "static/js/main.9ee82366.js"
+  ]
+}
