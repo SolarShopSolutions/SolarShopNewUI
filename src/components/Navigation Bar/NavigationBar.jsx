@@ -75,7 +75,7 @@ export default function NavigationBar() {
                 Blog
               </a> */}
               <Link className="nav-link fw-bold" to="/contactnew">
-                Contact Us New
+              Blog
               </Link>
             </li>
             <li className="nav-item px-5">

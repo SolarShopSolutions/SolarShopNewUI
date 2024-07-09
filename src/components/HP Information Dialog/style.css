@@ -1,3 +1,7 @@
+.modal-header{
+  background-color: rgb(97, 206, 112);
+}
+
 /* Information Dialog Button */
 .information-dialog {
   /* width: fit-content; */
@@ -19,9 +23,9 @@
 .bootStrappedDialog {
   position: absolute;
   max-width: 770px;
-  margin: 25px auto 0;
+  /* margin: 25px auto 0; */
   background: white;
-  padding: 25px 50px;
+  /* padding: 25px 50px; */
   border-radius: 8px;
   left: 0;
   right: 0;
@@ -33,8 +37,8 @@
   margin: 0;
   border-radius: 20px 20px 0 0;
   padding: 0;
-  height: 88vh;
-  overflow-y: scroll;
+  /* height: 88vh; */
+  /* overflow-y: scroll; */
   bottom: 0;
 }
 
@@ -86,7 +90,7 @@
 }
 
 .information-dialog-title {
-  background-color: #fff0d3;
+  /* background-color: #fff0d3; */
   font-weight: 600;
   /* font-size: 1.25rem; */
   line-height: 1.6;

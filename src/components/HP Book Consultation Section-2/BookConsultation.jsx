@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import logoNavigationImage from "../../common/images/logo192.png";
 import { Link } from "react-router-dom";
 import "./style.css";
@@ -28,6 +28,90 @@ export default function BookConsultation() {
   useEffect(() => {
     Aos.init({});
   });
+
+  const [formData, setFormData] = useState({
+    fullName: '',
+    contactNumber: '',
+    averageMonthlyBill:'',
+    city:'',
+    pinCode:'',
+    email: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
+    const data = new FormData();
+    data.append('fullName', formData.fullName);
+    data.append('contactNumber', formData.contactNumber);
+    data.append('averageMonthlyBill', formData.averageMonthlyBill);
+    data.append('city', formData.city);
+    data.append('pinCode', formData.pinCode);
+    data.append('email', formData.email);
+    console.log("Data before sending", data)
+   // your URL.
+
+    // const Sheet_Url="https://script.google.com/macros/s/AKfycbzw3GieiGYeEN-HL9xtDCeO0T0Rq6QJmlaH1EQpkyfzzDWgmqHiSR-QaunPcs7WuyK0Gw/exec"
+    const Sheet_Url="https://script.google.com/macros/s/AKfycbym8UW-27I-_PQajDKC-cm1xtrA0BcbWA8qhPFh0OyR7mKsDbYHPAgLsmduBPyPypce/exec"
+    console.log("Data before sending", data, Sheet_Url)
+    try {
+      await fetch(Sheet_Url, {
+        method: 'POST',
+        body: data,
+        muteHttpExceptions: true,
+      });
+
+      setFormData({
+        fullName: '',
+        contactNumber: '',
+        averageMonthlyBill:'',
+        city:'',
+        pinCode:'',
+        email: '',
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  // useEffect(() => {
+  //   const form = document.querySelector("#form")
+  //   const submitButton = document.querySelector("#submit")
+  //   const scriptURL = 'https://script.google.com/macros/s/AKfycbwG9vCMBREFM4suhSiTdVPFu7-F-6JclKyZGGuKjFS-dqaZT6kKXS6r_15kub3YH2R5yw/exec'
+ 
+  //   form.addEventListener('submit', e => {
+  //     submitButton.disabled = true
+  //     e.preventDefault()
+  //     let requestBody = new FormData(form)
+  //     fetch(scriptURL, { method: 'POST', body: requestBody})
+  //       .then(response => {
+  //          alert('Success!', response)
+  //          submitButton.disabled = false
+  //         })
+  //       .catch(error => {
+  //       alert('Error!', error.message)
+  //         submitButton.disabled = false
+ 
+  //       }
+  //       )
+  //   })
+  //   const script = document.createElement('script');
+  
+  //   script.src = "https://use.typekit.net/foobar.js";
+  //   script.async = true;
+  
+  //   document.body.appendChild(script);
+  
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   }
+  //   return () => {}
+  // }, []);
+  
 
   return (
     <>
@@ -133,28 +217,40 @@ export default function BookConsultation() {
                   experts
                 </p>
               </div>
+
+                      {/* FORM STARTS HERE */}
               <div className="col-sm-12 col-md-6">
                 <form
                   className="rounded p-4"
                   style={{ backgroundColor: "white" }}
+                  onSubmit={handleSubmit}
                 >
                   {/* <div className="form-row"> */}
                   <div className="form-group mb-1">
                     <label for="inputEmail4">Full Name</label>
                     <input
-                      type="name"
+                      type="text"
                       className="form-control rounded bg-light text-secondary"
-                      id="inputName"
+                      id="fullName"
+                      name="fullName"
+                      value={formData.fullName}
+                      onChange={handleChange}
+                      required
                       placeholder="Enter you name"
+                      
                     />
                   </div>
                   <div className="form-group mb-1">
-                    <label for="inputPassword4">WhatsApp Number</label>
+                    <label for="inputPhoneNumber">WhatsApp Number</label>
                     <input
                       type="number"
                       className="form-control bg-light text-secondary"
-                      id="inputNumber"
+                      id="contactNumber"
+                      name="contactNumber"
+                      value={formData.contactNumber}
+                      onChange={handleChange}
                       placeholder="Contact number"
+                      
                     />
                     {/* </div> */}
                   </div>
@@ -163,8 +259,12 @@ export default function BookConsultation() {
                     <input
                       type="number"
                       className="form-control bg-light text-secondary"
-                      id="inputUnits"
+                      id="averageMonthlyBill"
+                      name="averageMonthlyBill"
+                      value={formData.averageMonthlyBill}
+                      onChange={handleChange}
                       placeholder="Average monthly units"
+                      
                     />
                   </div>
                   {/* <div className="form-group">
@@ -182,8 +282,12 @@ export default function BookConsultation() {
                       <input
                         type="text"
                         className="form-control bg-light text-secondary"
-                        id="inputCity"
+                        id="city"
+                        name="city"
+                        value={formData.city}
+                        onChange={handleChange}
                         placeholder="Enter city"
+                       
                       />
                     </div>
                     <div className="form-group col mb-1">
@@ -191,8 +295,12 @@ export default function BookConsultation() {
                       <input
                         type="number"
                         className="form-control bg-light text-secondary"
-                        id="inputPinCode"
+                        id="pinCode"
+                        name="pinCode"
+                        value={formData.pinCode}
+                        onChange={handleChange}
                         placeholder="Enter pincode"
+                        
                       />
                     </div>
                     {/* col-md-5 */}
@@ -203,10 +311,14 @@ export default function BookConsultation() {
                     <input
                       type="email"
                       className="form-control bg-light text-secondary"
-                      id="inputEmail4"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder="Enter you email"
                       aria-label="Small"
                       aria-describedby="inputGroup-sizing-sm"
+                     
                     />
                   </div>
                   {/* <div class="input-group input-group-sm mb-3">
@@ -228,6 +340,7 @@ export default function BookConsultation() {
                         className="form-check-input"
                         type="checkbox"
                         id="gridCheck"
+                        onChange={handleChange}
                       />
                       <label className="form-check-label" for="gridCheck">
                         I agree to Solarshop's terms and conditions.
@@ -235,7 +348,7 @@ export default function BookConsultation() {
                     </div>
                   </div>
                   <button
-                    type="button"
+                    type="submit"
                     onMouseEnter={() => setIsMouseEntered(true)}
                     onMouseLeave={() => setIsMouseEntered(false)}
                     className="btn btn-success mb-1 fancy-button"
@@ -265,6 +378,7 @@ export default function BookConsultation() {
                   </button>
                 </form>
               </div>
+              
             </div>
           </div>
           

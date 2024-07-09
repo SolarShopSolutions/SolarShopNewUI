@@ -5,6 +5,13 @@ import WhyUs4 from "../common/images/whyUsThumbs-up_6043309.png";
 import WhyUs5 from "../common/images/whyUsTracking_13386211.png";
 import WhyUs6 from "../common/images/whyUsWarranty_950264.png";
 
+import Partner1 from "../common/images/OurPartner1.jpeg";
+import Partner2 from "../common/images/OurPartner2.png";
+import Partner3 from "../common/images/OurPartner3.png";
+import Partner4 from "../common/images/OurPartner4.png";
+import Partner5 from "../common/images/OurPartner5.jpeg";
+import Partner6 from "../common/images/OurPartner6.jpg";
+
 export default function scroll() {
   return (
     <>
@@ -20,8 +27,8 @@ export default function scroll() {
             scrollamount="15"
             onmouseover="this.stop()"
             onmouseout="this.start()"
-            // onMouseOver={this.stop()}
-            // onMouseOut={this.start()}
+            // onMouseOver=>{this.stop()}
+            // onMouseOut="this.start()"
           >
             <ul className="clts">
               <li
@@ -32,7 +39,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs1}
+                  src={Partner1}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -46,7 +53,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs2}
+                  src={Partner2}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -60,7 +67,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs3}
+                  src={Partner3}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -74,7 +81,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs4}
+                  src={Partner4}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -88,7 +95,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs5}
+                  src={Partner5}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -102,7 +109,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs6}
+                  src={Partner6}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -116,7 +123,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs1}
+                  src={Partner1}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -130,7 +137,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs2}
+                  src={Partner2}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -144,7 +151,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs3}
+                  src={Partner3}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -158,7 +165,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs4}
+                  src={Partner4}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -172,7 +179,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs5}
+                  src={Partner5}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -186,7 +193,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs6}
+                  src={Partner1}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -200,7 +207,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs1}
+                  src={Partner2}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -214,7 +221,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs2}
+                  src={Partner3}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -228,7 +235,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs3}
+                  src={Partner4}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -242,7 +249,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs4}
+                  src={Partner5}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -256,7 +263,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs5}
+                  src={Partner1}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -270,7 +277,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs6}
+                  src={Partner2}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -284,7 +291,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs1}
+                  src={Partner3}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -298,7 +305,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs2}
+                  src={Partner4}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -312,7 +319,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs3}
+                  src={Partner5}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -326,7 +333,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs4}
+                  src={Partner1}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -340,7 +347,7 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs5}
+                  src={Partner2}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}
@@ -354,7 +361,21 @@ export default function scroll() {
                 }}
               >
                 <img
-                  src={WhyUs6}
+                  src={Partner3}
+                  width="300"
+                  height="200"
+                  style={{ padding: "2px", border: "2px solid black" }}
+                />
+              </li>
+              <li
+                className="mr-2"
+                style={{
+                  boxShadow: "0 0 10px rgba(0,0,0,.3)",
+                  marginRight: "20px",
+                }}
+              >
+                <img
+                  src={Partner4}
                   width="300"
                   height="200"
                   style={{ padding: "2px", border: "2px solid black" }}

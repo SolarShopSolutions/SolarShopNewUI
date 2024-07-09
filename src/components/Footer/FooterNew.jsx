@@ -1,6 +1,10 @@
 import logoNavigationImage from "../../common/images/logo192.png";
 import { Link } from "react-router-dom";
 import bigLogo from "../../common/images/logo512.png";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaSquarePhone } from "react-icons/fa6";
+import { AiOutlineMail } from "react-icons/ai";
+import { MdOutlineMailOutline } from "react-icons/md";
 import "./style.css";
 
 export default function FooterNew() {
@@ -24,8 +28,7 @@ export default function FooterNew() {
                   </a>
                 </div>
                 <div className="footer-brand-slogan mt-4">
-                  Solar Shop Solutions democratizing renewable <br /> energy to
-                  the masses.
+                  Building a cleaner India
                   {/* Rooftop solar made simple. We don't just <br /> sell solar --
                   we give you peace of mind. */}
                 </div>
@@ -46,17 +49,13 @@ export default function FooterNew() {
                       <h5>Our Solutions</h5>
                       <ul className="list-unstyled">
                         <li>
-                          <a href="https://www.solarsquare.in/homes">Homes</a>
+                          <a href="">Homes</a>
                         </li>
                         <li>
-                          <a href="https://www.solarsquare.in/commercial">
-                            Commercial
-                          </a>
+                          <a href="">Commercial</a>
                         </li>
                         <li>
-                          <a href="https://www.solarsquare.in/housing-society">
-                            Housing Society
-                          </a>
+                          <a href="">Housing Society</a>
                         </li>
                         <li className="d-none">
                           <a href="#">Calculate Savings</a>
@@ -69,14 +68,10 @@ export default function FooterNew() {
                       <h5>Quick Links</h5>
                       <ul className="list-unstyled">
                         <li className="text-decoration-none">
-                          <a href="https://www.solarsquare.in/about-us">
-                            About Us
-                          </a>
+                          <a href="">About Us</a>
                         </li>
                         <li>
-                          <a href="https://www.solarsquare.in/solar-pro">
-                            SolarPro Partner
-                          </a>
+                          <a href="">SolarPro Partner</a>
                         </li>
                         <li className="d-none">
                           <a href="#">Refer & Earn</a>
@@ -85,9 +80,7 @@ export default function FooterNew() {
                           <a href="#">SSE in News</a>
                         </li>
                         <li>
-                          <a href="https://www.solarsquare.in/sitemap">
-                            Sitemap
-                          </a>
+                          <a href="">Sitemap</a>
                         </li>
                       </ul>
                     </div>
@@ -127,15 +120,19 @@ export default function FooterNew() {
                   <div className="col-md-5">
                     <h5 className="footer-contact">
                       {/* <a href="tel:+919830003000"> */}
-                      <i className="fa fa-phone"></i> 98 3000 3000
+                      {/* <i className="fa fa-phone"></i> */}
+                      <FaSquarePhone />
+                      {/* <FaPhoneAlt /> */}
+                      {" 8447705400"}
                       {/* </a> */}
                     </h5>
                   </div>
                   <div className="col-md-7">
                     <h5 className="footer-contact">
                       {/* <a href="/cdn-cgi/l/email-protection#1b6c7e7772686f7e755b6874777a69686a6e7a697e357275"> */}
-                      <i className="fa fa-envelope"></i>{" "}
-                      <span>solarshop@gmail.com</span>
+                      {/* <i className="fa fa-envelope"></i> */}
+                      <MdOutlineMailOutline />{" "}
+                      <span>info@solarshopsolutions.com</span>
                       {/* </a> */}
                     </h5>
                   </div>

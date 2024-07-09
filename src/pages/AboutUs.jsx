@@ -7,7 +7,7 @@ function AboutUsPage() {
     >
       {/* <div class="col-11 "> */}
       <div className="col flex-grow-1">
-        <h1 className="display-4 text-uppercase font-weight-bold mt-4">
+        <h1 className="display-4 font-weight-bold mt-4">
           About Us
         </h1>
         <hr className="my-2 bg-light border-0" />
